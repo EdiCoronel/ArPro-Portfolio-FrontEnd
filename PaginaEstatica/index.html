@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ediberto Coronel</title>
+
+        <!--====== Icono Favicon ======-->
+    <link href="./assets/img/Logo_Ediberto_Coronel.ico" rel="shortcut icon" type="image/ico"/>
+
+        <!--Link to the CSS files-->  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/feactures.css">
+
+    </head>
+        <div class="container" id="cabecera">
+            <header class="d-flex flex-wrap border-bottom align-items-center justify-content-center justify-content-md-between py-3 mb-4 " style="margin-bottom: 0!important">
+                    <a class="navbar-brand" href="#">
+                    <img src="./assets/img/Logo_Ediberto_Coronel.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    </a>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+                    <li><a href="#acerca" class="nav-link px-2 link-dark">Presentación</a></li>
+                    <li><a href="#experiencia" class="nav-link px-2 link-dark">Experiencia</a></li>
+                    <li><a href="#educacion" class="nav-link px-2 link-dark">Educación</a></li>
+                    <li><a href="#tecnologias" class="nav-link px-2 link-dark">Tecnologias</a></li>
+                    <li><a href="#proyectos" class="nav-link px-2 link-dark">Proyectos</a></li>
+                </ul>
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-info me-2">Login</button>
+                    <button type="button" class="btn btn-info">Logout</button>
+                </div>
+            </header>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </symbol>
+            <symbol id="linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </symbol>
+            <symbol id="check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </symbol>
+            <symbol id="x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </symbol>
+            <symbol id="flecha_arriba" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+            </symbol>
+            <symbol id="flecha_arriba_cuadro" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </symbol>
+        </svg>
+
+    <body>
+        <!-- Inicio Banner -->
+        <div class="container py-5 banner" id="acerca">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-12">
+                    <div class="h-100 p-7" style="background-size: cover"> 
+                        <img src="./assets/img/ediberto_banner.png" alt="Ediberto_banner" class="img-fluid rounded-3" style="width: 100%; height: 100%;">
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- Fin Banner -->
+
+        <!-- Inicio Acerca de.. Area -->
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="content-left wow fadeInLeft">
+                        <img src="./assets/img/Foto_ediberto.png" class="imagen_edi" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 py-4">
+                    <div class="content-right wow fadeInRight" data-wow-delay=".5s">
+                        <h2>Presentación</h2>
+                        <p>Actualmente deseo incorporarme en el mundo del IT, he realizado estudios en el área de
+                            testing manual con deseos de continuar a la automatización de pruebas, estoy en proceso
+                            continuo de aprendizaje de otros lenguajes de programación y desarrollo web
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- fin Acerca de.. Area -->
+
+        <!-- Inicio Experiencia Area -->
+        <div class="container px-4 py-5" id="experiencia">
+            <h2 class="pb-2 border-bottom">Experiencia Laboral</h2>
+            <div class="row g-4 py-4 cols-1 cols-lg-2">
+                <div class="col-2 d-flex align-items-start">
+                    <div>
+                    <img src="./assets/img/ogus_logo.jpg" alt="Ediberto_banner" class="img-fluid rounded-3" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                    <h3 class="fs-2">Pinturerias Ogus S.A.</h3>
+                    <h5>Ventas a Empresas</h5>
+                    <p>Venta a clientes corporativos. Recuperación de clientes
+                        inactivos. Controlar, medir y trabajar la calidad de gestión,
+                        elaborando planes de acción y seguimiento, generando reportes
+                        de la gestión. Generar vínculos comerciales, participar
+                        activamente en los procesos licitatorios y en la cotización,
+                        negociación y cierre de negocios con potenciales clientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-start feature">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-check"><use xlink:href="#check"/></svg></button>
+                    </div>
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-x"><use xlink:href="#x"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 py-4 cols-1 cols-lg-2">
+                <div class="col-2 d-flex align-items-start">
+                    <div>
+                    <img src="./assets/img/invap_logo.jpg" alt="Ediberto_banner" class="img-fluid rounded-3" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                    <h3 class="fs-2">INVAP S.E.</h3>
+                    <h5>Supervisor</h5>
+                    <p>Responsable de controlar la correcta fabricación de piezas de montaje. Control de continuidad, aislación, corte y entrega de cables eléctricos mediante la verificación de planos y materiales, cumpliendo de las especificaciones del cliente para su correcta instalación</p>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-start feature">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-check"><use xlink:href="#check"/></svg></button>
+                    </div>
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-x"><use xlink:href="#x"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 py-4 cols-1 cols-lg-2">
+                <div class="col-2 d-flex align-items-start">
+                    <div>
+                    <img src="./assets/img/Escorpion-EPA-1170x381.jpg" alt="Ediberto_banner" class="img-fluid rounded-3" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                    <h3 class="fs-2">Ferreteria EPA S.A.</h3>
+                    <h5>Asesor de Ventas</h5>
+                    <p>Departamentos de iluminación, pintura, cocinas, servicios puertas y maderas: asesoría al cliente según 6 pasos para la venta, recepción de mercancía en área de ventas, surtido de mercancía según criterio FIFO, almacenaje de mercancía en paletas y manual, conteos mensuales para control de inventario, toma física de inventario general anual.</p>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-start feature">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-check"><use xlink:href="#check"/></svg></button>
+                    </div>
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-x"><use xlink:href="#x"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end"> 
+                <a class="text-muted" href="#"><svg class="bi" width="30" height="30"><use xlink:href="#flecha_arriba_cuadro"/></svg></a>
+            </div>
+        </div>
+        <!-- Fin Experiencia Area -->
+    
+        <!-- Inicio Educacion Area -->
+        <div class="container px-4 py-5" id="educacion">
+            <h2 class="pb-2 border-bottom">Educacion</h2>
+            <div class="row g-4 py-4 cols-1 cols-lg-2">
+                <div class="col-2 d-flex align-items-start">
+                    <div>
+                    <img src="./assets/img/logo2_ISPC.png" alt="" class="img-fluid rounded-3" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                    <h3 class="fs-2">ISPC - Instituto Superior Politecnico de Cordoba</h3>
+                    <h5>Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-start feature">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-check"><use xlink:href="#check"/></svg></button>
+                    </div>
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-x"><use xlink:href="#x"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 py-4 cols-1 cols-lg-2">
+                <div class="col-2 d-flex align-items-start">
+                    <div>
+                    <img src="./assets/img/logo-mby.jpg" alt="" class="img-fluid rounded-3" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                    <h3 class="fs-2">Liceo Mario Briceño Iragorry</h3>
+                    <h5>Bachiller en Ciencias</h5>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-start feature">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-check"><use xlink:href="#check"/></svg></button>
+                    </div>
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-info btn-circle d-inline-flex align-items-center justify-content-center"><svg width="20" height="20" fill="currentColor" class="bi bi-x"><use xlink:href="#x"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end"> 
+                <a class="text-muted" href="#"><svg class="bi" width="30" height="30"><use xlink:href="#flecha_arriba_cuadro"/></svg></a>
+            </div>
+        </div>
+        <!-- Fin Educacion Area -->
+    
+        <!-- Inicio Tecnologias Area -->
+        <div class="container py-5" id="tecnologias">
+            <h2 class="pb-2 border-bottom">Tecnologias</h2>
+            <div class="porcentaje">
+                <div class="row tarjeta">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="box" target="_blank">
+                                <div class="porcent">
+                                    <svg class="tarjeta_porcentaje">
+                                        <circle cx="70" cy="70" r="70"/>
+                                        <circle cx="70" cy="70" r="70"/>
+                                    </svg>
+                                <div class="number">
+                                    <h2>80<span>%</span></h2>
+                                </div>
+                                <h3 class="text">HTML</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-body">
+                            <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="box" target="_blank">
+                                <div class="porcent">
+                                    <svg class="tarjeta_porcentaje">
+                                        <circle cx="70" cy="70" r="70"/>
+                                        <circle cx="70" cy="70" r="70"/>
+                                    </svg>
+                                <div class="number">
+                                    <h2>70<span>%</span></h2>
+                                </div>
+                                <h3 class="text">CSS</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="box" target="_blank">
+                                <div class="porcent">
+                                    <svg class="tarjeta_porcentaje">
+                                        <circle cx="70" cy="70" r="70"/>
+                                        <circle cx="70" cy="70" r="70"/>
+                                    </svg>
+                                <div class="number">
+                                    <h2>50<span>%</span></h2>
+                                </div>
+                                <h3 class="text">JavaScript</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porcentaje">
+                <div class="row tarjeta">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://www.mysql.com/" target="_blank" class="box">
+                                <div class="porcent">
+                                    <svg class="tarjeta_porcentaje1">
+                                        <circle cx="70" cy="70" r="70"/>
+                                        <circle cx="70" cy="70" r="70"/>
+                                    </svg>
+                                <div class="number">
+                                    <h2>60<span>%</span></h2>
+                                </div>
+                                <h3 class="text">MySQL</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-body box">
+                            <a href="https://www.python.org/" target="_blank" class="box">
+                                <div class="porcent">
+                                    <svg class="tarjeta_porcentaje1">
+                                        <circle cx="70" cy="70" r="70"/>
+                                        <circle cx="70" cy="70" r="70"/>
+                                    </svg>
+                                <div class="number">
+                                    <h2>40<span>%</span></h2>
+                                </div>
+                                <h3 class="text">PYTHON</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body box">
+                            <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa/testing" target="_blank" class="box">
+                                <div class="porcent">
+                                    <svg class="tarjeta_porcentaje1">
+                                        <circle cx="70" cy="70" r="70"/>
+                                        <circle cx="70" cy="70" r="70"/>
+                                    </svg>
+                                <div class="number">
+                                    <h2>80<span>%</span></h2>
+                                </div>
+                                <h3 class="text">QA Testing</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end"> 
+                <a class="text-muted" href="#"><svg class="bi" width="30" height="30"><use xlink:href="#flecha_arriba_cuadro"/></svg></a>
+            </div>
+        </div>   
+        <!-- Fin Tecnologias Area -->
+
+        <!-- Inicio Proyectos Area -->
+        <div class="container" id="proyectos">
+            <div class="album py-5 bg-light">
+                <h2 class="pb-2 border-bottom">Proyectos</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 proyect">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/img/ahorcado.png" alt="ahorcado" class="proyecto1">
+                            <div class="card-body">
+                                <p class="card-text">Este programa llamado "Juego del Ahorcado" fue desarrollado para el Challeger Oracle Logica de Programacion Alura-Oracle One</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-outline-info" href="https://edicoronel.github.io/Reto-juego-del-Ahorcado/" target="_blank" role="button">Ver</a>
+                                        <a class="btn btn-outline-info" href="https://github.com/EdiCoronel/Reto-juego-del-Ahorcado" target="_blank" role="button">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/img/encriptador.png" alt="encriptador" class="proyecto2">
+                            <div class="card-body">
+                                <p class="card-text">Este programa llamado "Encriptador" fue desarrollado para el Challeger Oracle Logica de Programacion Alura-Oracle One</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-outline-info" href="https://edicoronel.github.io/challenge-oracle-decoder/" target="_blank" role="button">Ver</a>
+                                        <a class="btn btn-outline-info" href="https://github.com/EdiCoronel/challenge-oracle-decoder" target="_blank" role="button">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/img/Concepto_Li.png" alt="concepto_li" class="proyecto3">
+                            <div class="card-body">
+                                <p class="card-text">Esta Pagina Web fue creada para el empredimiento Concepto Li</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-outline-info" href="https://edicoronel.github.io/ConceptoLi-1/" role="button" target="_blank">Ver</a>
+                                        <a class="btn btn-outline-info" href="https://github.com/EdiCoronel/ConceptoLi-1" target="_blank" role="button">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/img/Edi_port.png" alt="edi_port" class="proyecto4">
+                            <div class="card-body">
+                                <p class="card-text">Este Portfolio Personal fue desarrollado para el Challeger Alura-Oracle One Front-End</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-outline-info" href="https://edicoronel.github.io/Alura-Challenger-Front-End/" target="_blank" role="button">Ver</a>
+                                        <a class="btn btn-outline-info" href="https://github.com/EdiCoronel/Alura-Challenger-Front-End" target="_blank" role="button">GitHub</a>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end"> 
+                <a class="text-muted" href="#"><svg class="bi" width="30" height="30"><use xlink:href="#flecha_arriba_cuadro"/></svg></a>
+            </div>
+        </div>
+        <!-- Fin Proyectos Area -->    
+    </body>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="./assets/img/Logo_Ediberto_Coronel.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Ediberto Coronel</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="mb-3 mb-md-0 text-muted" href="mailto:coronelvediberto@gmail.com">coronelvediberto@gmail.com</a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://twitter.com/EdibertoCoronel" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://github.com/EdiCoronel" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/edibertocoronel/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
+                </ul>
+            </footer>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</html>
